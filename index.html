@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -7,12 +8,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+   
     <link rel="stylesheet" href="tailwind.css" />
     <title>Tailwind Portfolio</title>
 </head>
 
 <body class="font-nunito">
-    <!-- intro section -->
+
     <div class="h-1/2 lg:h-screen bg-white relative">
 
         <!-- navbar -->
@@ -45,41 +47,44 @@
                     <div class="w-6 h-0.5 bg-black"></div>
                     <div class="w-6 h-0.5 bg-black"></div>
                 </div>
-                <ul id="menu" class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
+                <ul id="menu" class="hidden bg-gray-700 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
                     <li>
-                        <a id="hLink" href="#">homepage</a>
+                        <a id="Link" href="#">homepage</a>
                     </li>
                     <li>
-                        <a id="hLink" href="#about">about me</a>
+                        <a id="Link" href="#about">about me</a>
                     </li>
                     <li>
-                        <a id="hLink" href="#services">services</a>
+                        <a id="Link" href="#services">services</a>
                     </li>
                     <li>
-                        <a id="hLink" href="#works">works</a>
+                        <a id="Link" href="#works">works</a>
                     </li>
                     <li>
-                        <a id="hLink" href="#contact">contact</a>
+                        <a id="Link" href="#contact">contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
-       
-        <img class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover" src="images/p8.JPG" alt="" />
+        
+        <div>
+        <img class="absolute bottom-1 right-0 lg:right-0 mx-auto h-5/6 object-cover" src="images/p8.JPG" alt="" />
         <!-- circle -->
         <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"></div>
         <!-- animated text -->
-        <div class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
+        <div>
+        <div class="absolute top-1/3 left-16 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
             <span class="text-gray-600">SOFTWARE<br> DEVELOPER.</span>
             <p id="text" class="text-red-500"></p>
         </div>
-        <!-- texts -->
-        <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg absolute top-0 bottom-0 m-auto right-10 bg-white  p-6 h-fit w-1/3">
+        <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg shadow-gray-600 absolute top-96 bottom-0 m-auto left-36 bg-white  p-6 h-fit w-1/3">
             <h1 class="text-4xl font-bold text-stroke-black">Hi, I'm Gabriel</h1>
             <p class="text-gray-600">
                 with a certificate of experience on web design and development. Lorem ipsum dolor sit amet consectetur adipisicing elit. N oumquam quo provident, facere minus temporibus veniam nostrum reprehenderit nihil?
             </p>
             <a class="bg-gray-500 text-white text-xl px-3 py-2 rounded-md  w-fit" href="#contact">Hire Me</a>
+        </div>
+        </div>
         </div>
     </div>
     
@@ -88,13 +93,13 @@
         <div class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
 
             <div class="my-auto flex flex-col gap-3 ">
-                <h1 class="text-stroke-black font-bold">ABOUT ME</h1>
+                <h1 class="text-stroke-black font-bold underline text-3xl">ABOUT ME.</h1>
                
 
                 <div class="grid md:grid-cols-3 grid-cols-1 mt-8 gap-[30px]">
 
-                <div class="flex flex-col gap-5 rounded-md shadow-lg bg-white p-6 max-w-md mx-auto content mt-7">
-                    <h1 class="text-4xl font-bold text-stroke-black">Experience</h1>
+                <div class="flex flex-col gap-5 rounded-md shadow-lg bg-white p-6 max-w-md mx-auto content mt-7 shadow-gray-600">
+                    <h1 class="text-4xl font-bold text-stroke-black">Experience.</h1>
                     <p class="text-gray-600">
                         2+ years<br>
                         Frontend and Backend Development.
@@ -102,8 +107,8 @@
                 </div>
 
 
-                <div class="flex flex-col gap-5 rounded-md shadow-lg bg-white p-6 max-w-md mx-auto content mt-7">
-                    <h1 class="text-4xl font-bold text-stroke-black">Education</h1>
+                <div class="flex flex-col gap-5 rounded-md shadow-lg bg-white p-6 max-w-md mx-auto content mt-7 shadow-gray-600">
+                    <h1 class="text-4xl font-bold text-stroke-black">Education.</h1>
                     <p class="text-gray-600">
                         Certificate in Software Development.<br>
                         Diploma in Software Development.
@@ -111,17 +116,16 @@
                 </div>
 
 
-                <div class="flex flex-col gap-5 rounded-md shadow-lg bg-white p-6 max-w-md mx-auto content mt-7">
-                    <h1 class="text-4xl font-bold text-stroke-black">My Slogan</h1>
+                <div class="flex flex-col gap-5 rounded-md shadow-lg bg-white p-6 max-w-md mx-auto content mt-7 shadow-gray-600">
+                    <h1 class="text-4xl font-bold text-stroke-black ">My Slogan.</h1>
                     <p class="text-gray-600">
-                        Better Design <br>
-                       for Better Experience.
+                        A Better Design <br>
+                       for Better a Experience.
                     </p>
                 </div>
 
                 </div>
-
-
+                <br><br>
                 <p class="text-gray-600">
                     I design and build digital products. I'm also a multi-disciplinary maker with over 5 years of experiences in a wide range of design disciplines.
                     As a web designer, my prowess in crafting digital landscapes is truly commendable. I have a keen eye for aesthetics and attention to detail shine through in every project you undertake. Your designs not only demonstrate a deep understanding of user experience but also reflect a unique and innovative approach. The seamless integration of color schemes, typography, and layout showcases your ability to create visually stunning and functional websites.
@@ -139,19 +143,19 @@ My proficiency in utilizing a variety of design tools and coding languages under
     <div id="services" class="dark:bg-white">
     <section class="container mx-auto px-6 py-16 md:py-24 relative">
         <div class="text-center grid grid-cols-1 pb-8">
-            <h6 class="dark:text-stroke-black text-sm font-bold uppercase mb-2">Services</h6>
+            <h6 class="dark:text-stroke-black font-bold uppercase mb-2 underline text-3xl">Services.</h6>
             <h3 class="font-semibold text-2xl md:text-3xl leading-normal mb-4">What Do i Offer?</h3>
             <p class="max-w-xl mx-auto text-slate-400">
                 I offer a wide range of services to help you achieve your goals. Whether you need assistance with website design, marketing, or anything in between, we've got you covered. Here are some of the services we provide:
             </p>
         </div>
         <div class="grid md:grid-cols-3 grid-cols-1 mt-8 gap-[30px]">
-            <div class="group p-6 md:px-4 rounded-lg shadow hover:shadow-md bg-white text-center transition-all duration-500 ease-in-out">
+            <div class="group p-6 md:px-4 rounded-lg shadow hover:shadow-md bg-white text-center transition-all duration-500 ease-in-out shadow-gray-600">
                 <!-- Icon -->
                 <div class="w-16 h-16 rounded-lg text-2xl flex items-center justify-center shadow-sm mx-auto">
                     <img src="images/i4.png" alt="">
                 </div>
-                <div class="content mt-7">
+                <div class="content mt-7 ">
                     <a href="" class="title h5 text-lg font-medium hover:text-blue-600">HTML</a>
                     <p class="text-slate-400 mt-3">
                         I deliver high-quality solutions for web development. To begin, understanding client requirements is crucial; effective communication helps tailor HTML code to meet their specific needs.
@@ -159,7 +163,7 @@ My proficiency in utilizing a variety of design tools and coding languages under
                 </div>
             </div>
     
-            <div class="group p-6 md:px-4 rounded-lg shadow hover:shadow-md bg-white text-center transition-all duration-500 ease-in-out">
+            <div class="group p-6 md:px-4 rounded-lg shadow hover:shadow-md bg-white text-center transition-all duration-500 ease-in-out shadow-gray-600">
                 <div class="w-16 h-16 rounded-lg text-2xl flex items-center justify-center shadow-sm mx-auto">
                     <img src="images/i1.png" alt="">
                 </div>
@@ -171,7 +175,7 @@ My proficiency in utilizing a variety of design tools and coding languages under
                 </div>
             </div>
     
-            <div class="group p-6 md:px-4 rounded-lg shadow hover:shadow-md bg-white text-center transition-all duration-500 ease-in-out">
+            <div class="group p-6 md:px-4 rounded-lg shadow hover:shadow-md bg-white text-center transition-all duration-500 ease-in-out shadow-gray-600">
                 <div class="w-16 h-16 rounded-lg text-2xl flex items-center justify-center shadow-sm mx-auto">
                     <img src="images/i5.png" alt="">
                 </div>
@@ -192,7 +196,7 @@ My proficiency in utilizing a variety of design tools and coding languages under
         <div class="container mx-auto">
             <!-- top -->
             <div class="flex flex-col gap-3 items-center">
-                <h1 class="dark:text-stroke-black font-bold">WORKS</h1>
+                <h1 class="dark:text-stroke-black font-bold underline text-3xl">WORKS.</h1>
                 <h1 class="text-3xl dark:text-stroke-black">Works & Projects</h1>
                 <p class="w-1/2 text-center text-gray-600">
                     I help designers, small agencies, and businesses bring their ideas to life. Powered by Figma, VS Code, and coffee, I turn your requirements into well-designed websites.
@@ -201,24 +205,27 @@ My proficiency in utilizing a variety of design tools and coding languages under
             <!-- bottom -->
             <div class="p-5 sm:p-0 flex flex-wrap justify-between ">
                 <!-- card -->
-                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
-                    <video class="rounded-2xl shadow-2xl shadow-pink-900"
-                    src="vid/projectvid.mp4" autoplay muted height="500px"
-                    width="500px"></video>
+                <div class="w-full md:w-5/12 lg:w-1/5 ">
+                    <a href="CheffersHotel/index.html"><video class="rounded-2xl shadow-2xl shadow-gray-600 h-40"
+                        src="vid/projectvid.mp4" autoplay muted 
+                        width="500px"></video></a>
                 </div>
                 <!-- card -->
-                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
-                    <video class="rounded-2xl shadow-2xl shadow-pink-900"
-                    src="vid/projectvid2.mp4" autoplay muted height="500px"
-                    width="500px"></video>
+                <div class="w-full md:w-5/12 lg:w-1/5 ">
+                    <a href="Bakery/index.html"><video class="rounded-2xl shadow-2xl shadow-gray-600 h-40"
+                        src="vid/projectvid2.mp4" autoplay muted
+                        width="500px"></video></a>
                 </div>
-                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
-                    <img src="images/w3.jpg" />
+                <div class="w-full md:w-5/12 lg:w-1/5 ">
+                    <a href="calc/calc.html"><video class="rounded-2xl shadow-2xl shadow-gray-600 h-40"
+                        src="vid/projectvid3.mp4" autoplay muted
+                        width="500px"></video></a>
                 </div>
-                <div class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 md:my-10 m-1 transition-all hover:scale-110">
-                    <img src="images/w4.jpg" />
+                <div class="w-full md:w-5/12 lg:w-1/5 ">
+                    <a href="Public/Index.html"><video class="rounded-2xl shadow-2xl shadow-gray-600 h-40"
+                        src="vid/projectvid4.mp4" autoplay muted 
+                        width="500px"></video></a>
                 </div>
-                <!-- Repeat the above card structure for other works -->
             </div>
         </div>
     </div>
@@ -228,7 +235,7 @@ My proficiency in utilizing a variety of design tools and coding languages under
         <div class="container mx-auto">
             <!-- top -->
             <div class="flex flex-col gap-3 items-center">
-                <h1 class="dark:text-stroke-black font-bold">CONTACT US</h1>
+                <h1 class="dark:text-stroke-black font-bold underline text-3xl">CONTACT ME.</h1>
                 <h1 class="text-3xl dark:text-stroke-black">Have a Question?</h1>
                 <p class="w-1/2 text-center text-gray-600">
                     Do you have an idea? Let's discuss it and see what we can do together.
@@ -251,17 +258,16 @@ My proficiency in utilizing a variety of design tools and coding languages under
                 <span class="text-2xl font-bold dark:text-stroke-black">Portfolio.</span>
             </div>
             <span class="hidden md:block font-medium text-gray-600">© 2022 Portfolio Design with ♥️ by Gabriel Wambua.</span>
-            <div class="flex gap-2">
-                <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
-                <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="" />
-                <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="" />
-                <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="" />
+           
             </div>
         </div>
     </div>
-    <script src="./app.js"></script>
-    <script src="./autotyping.js"></script>
-</body>
 
+    <script src="path/to/your/app.js"></script>
+    <script src="path/to/your/autotyping.js"></script>
+    
+    
+</body>
 </html>
+
 

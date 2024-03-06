@@ -1,0 +1,19 @@
+div{
+    width: 400px;
+    height: 96%;
+}
+form{
+    height: 880px;
+}
+form input[type=text]{
+    border-bottom: 2px solid black;
+    width: 350px;
+}
+form input[type=date]{
+    border-bottom: 2px solid black;
+    width: 350px;
+}
+form textarea{
+    border-bottom: 2px solid black;
+    width: 350px;
+}

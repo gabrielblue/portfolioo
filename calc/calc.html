@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-slate-800 flex items-center justify-center h-screen">
+    <div class="bg-slate-700 p-10 rounded shadow">
+        <div id="display" class="mb-5 p-5 bg-white rounded text-right text-2xl"></div>
+        <div class="grid grid-cols-4 gap-5">
+            <button class="btn-operator bg-gray-400 p-5 rounded text-xl text-white" id="/">&divide;</button>
+            <button class="btn-number bg-slate-50 p-5 rounded text-xl" id="7">7</button>
+            <button class="btn-number bg-slate-50 p-5 rounded text-xl" id="8">8</button>
+            <button class="btn-number bg-slate-50 p-5 rounded text-xl" id="9">9</button>
+            <button class="btn-operator bg-gray-400 p-5 rounded text-xl" id="+">+</button>
+            <button class="btn-number bg-slate-50 p-5 rounded text-xl" id="4">4</button>
+            <button class="btn-number bg-slate-50 p-5 rounded text-xl" id="5">5</button>
+            <button class="btn-number bg-slate-50 p-5 rounded text-xl" id="6">6</button>
+            <button class="btn-operator bg-gray-400 p-5 rounded text-xl" id="-">-</button>
+            <button class="btn-number bg-slate-50 p-5 rounded text-xl" id="1">1</button>
+            <button class="btn-number bg-slate-50 p-5 rounded text-xl" id="2">2</button>
+            <button class="btn-number bg-slate-50 p-5 rounded text-xl" id="3">3</button>
+            <button class="btn-operator bg-gray-400 p-5 rounded text-xl" id="*">&times;</button>
+            <button class="btn-number bg-slate-50 p-5 rounded text-xl" id="0">0</button>
+            <!-- More buttons... -->
+            <button class="btn-operator bg-red-700 p-5 rounded text-xl text-white" id="clear">C</button>
+            <!-- More buttons... -->
+            
+            <button class="btn-equal bg-slate-50 p-5 rounded text-xl text-black" id="equal">=</button>
+        </div>
+    </div>
+    <script>
+        const display = document.querySelector('#display');
+        const buttons = document.querySelectorAll('button');
+
+        buttons.forEach((item) => {
+                item.onclick = () => {
+                    if (item.id == 'clear') {
+                        display.innerText = '';
+                    } else if (item.id == 'backspace') {
+                        let string = display.innerText.toString();
+                        display.innerText = string.subtr(0, string.length - 1);
+                    } else if (display.innerText != '' && item.id == 'equal') {
+                        display.innerText = eval(display.innerText);
+                    } else if (display.innerText == '' && item.id == 'equal') {
+                        display.innerText = 'EMPTY!';
+                        setTimeout(() => (display.innerText = ''), 2000);
+                    } else {
+                        display.innerText += item.id;
+                    }
+                }
+            })
+    </script>
+</body>
+
+</html>
+

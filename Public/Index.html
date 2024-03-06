@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90%  min-h-screen" >
+    <div class="mx-auto mt-2 min-h-screen h-96">
+        <form class="p-6 bg-slate-50 max-w-md  mb-black">
+            <h1 class="text-2xl font-bold text-gray-900">Test Form</h1>
+            <div class="h-screen">
+            <div class="mt-1">
+                <label for="first-name" class="block text-sm font-medium text-gray-700">First Name</label>
+                <input type="text" name="first-name" id="first-name" placeholder="Enter Your Firstname" class="bg-slate-50">
+                
+                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <input type="text" id="email" name="email" type="email" placeholder="Enter Your Email" class="bg-slate-50">
+                
+                <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                <input type="text" name="phone" id="phone" placeholder="Enter Your Phone Number" class="bg-slate-50"><br>
+                
+               
+                <label class="block text-sm font-medium text-gray-700">Age</label>
+                <br><br>
+                <input type="radio" name="age" value=">18" class="mr-2">
+                <label for="education-high-school"> 4>18</label><br>
+                <input type="radio" name="age" value="13-35" class="mr-2">
+                <label for="education-high-school">18-35</label><br>
+                <input type="radio" name="age" value="35+" class="mr-2">
+                <label for="education-high-school">35+</label><br><br>
+                
+                
+                
+                <label class="block text-sm font-medium text-gray-700">Education</label><br>
+                <br>
+                <input type="checkbox" name="age" value=">18" class="mr-2">
+                <label for="education-high-school">high-school</label><br>
+                <input type="checkbox" name="age" value="13-35" class="mr-2">
+                <label for="education-high-school">Some collage</label><br>
+                <input type="checkbox" name="age" value="35+" class="mr-2">
+                <label for="education-high-school">Associate,s Degree</label><br>
+                <input type="checkbox" name="age" value="35+" class="mr-2">
+                <label for="education-high-school">Bachelor,s Degree</label>
+
+                <br><br>
+                <label class="date block text-sm font-medium text-gray-700">
+                    Appointment Date
+                    
+                </label>
+                <br>
+                <input type="date" class="w-4/5 p-2 bg-slate-50 mb-3 rounded">
+                <br><br>
+                <label for="reason" class="block text-sm font-medium text-gray-700">Reason For Appointment</label>
+                <select id="reason" name="reason" autocomplete="country-name" class="w-4/5 p-2 bg-gray-300 mb-4 rounded">
+                    <option>Select your reason</option>
+                    <option>Option 1</option>
+                    <option>Option 2</option>
+                    <option>Option 3</option>
+                </select>
+                
+                <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                <textarea id="message" name="message" rows="4" class="w-3/4 p-2 bg-slate-50 mb-4 rounded"></textarea><br>
+                
+                <button type="submit" class="bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% text-white py-2 px-4 rounded-full">Submit</button>
+            </div>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
