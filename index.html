@@ -7,19 +7,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
-   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="tailwind.css" />
     <title>Tailwind Portfolio</title>
+    <style>
+        @media (max-width: 1000px) {
+            #about{
+                margin-top: 1000px;
+            }
+        }
+    </style>
 </head>
 
-<body class="font-nunito">
+<body class="main">
 
     <div class="h-1/2 lg:h-screen bg-white relative">
 
         <!-- navbar -->
-        <nav class="w-full fixed top-0 bg-blue-50 z-10 dark: d-flex">
-            <div class="container mx-auto py-5 flex items-center justify-between">
+        <nav class="w-full fixed top-0  bg-blue-50 z-10">
+            <div class="container mx-auto  flex items-center justify-between">
         <div class="flex items-center gap-2">
                  
             <span class="text-2xl font-bold dark:text-stroke-black">Gabriel Wambua.</span>
@@ -41,158 +48,159 @@
                         <a href="#contact">contact</a>
                     </li>
                 </ul>
+                <div>
                 <a href=""  class="text-2xl font-bold text-blue-500"><img src="images/l1.png" height="40px" width="200px" alt=""></a>
-                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
-                    <div class="w-6 h-0.5 bg-black"></div>
-                    <div class="w-6 h-0.5 bg-black"></div>
-                    <div class="w-6 h-0.5 bg-black"></div>
                 </div>
-                <ul id="menu" class="hidden bg-gray-700 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
-                    <li>
-                        <a id="Link" href="#">homepage</a>
-                    </li>
-                    <li>
-                        <a id="Link" href="#about">about me</a>
-                    </li>
-                    <li>
-                        <a id="Link" href="#services">services</a>
-                    </li>
-                    <li>
-                        <a id="Link" href="#works">works</a>
-                    </li>
-                    <li>
-                        <a id="Link" href="#contact">contact</a>
-                    </li>
-                </ul>
+                <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
+                    <button class="text-stroke-black" id="navToggle"><i class="fas fa-bars"></i></button>
+                    <span class="w-6 h-0.5 bg-black"></span>
+                    <span class="w-6 h-0.5 bg-black"></span>
+                    <span class="w-6 h-0.5 bg-black"></span>
+                    <ul id="menu" class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-600 font-bold text-sm uppercase">
+                        <li class="hover:text-black">
+                          <a href="#">home</a>
+                        </li>
+                        <li class="hover:text-gray-600">
+                          <a href="#about">about me</a>
+                        </li>
+                        <li class="hover:text-gray-600">
+                          <a href="#services">services</a>
+                        </li>
+                        <li class="hover:text-gray-600">
+                          <a href="#works">works</a>
+                        </li>
+                        <li class="hover:text-gray-600">
+                          <a href="#contact">contact</a>
+                        </li>
+                      </ul>
+                  </div>                
             </div>
         </nav>
-        
-        <div>
-        <img class="absolute bottom-1 right-0 lg:right-0 mx-auto h-5/6 object-cover" src="images/p8.JPG" alt="" />
-        <!-- circle -->
-        <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-big h-big bg-indigo-900 rounded-full -z-10"></div>
-        <!-- animated text -->
+    </div>
+
+        <!-- Profile Section -->
+        <div class="mt-9 ">
+            <!-- profile pic -->
+        <img class="absolute bottom-0 right-0 sm:right-0 lg:right-0 mx-auto h-5/6 object-cover" src="images/p8.JPG" alt="" />        
         <div>
         <div class="absolute top-1/3 left-16 text-xl sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-48 xl:text-7xl font-bold">
-            <span class="text-gray-600">SOFTWARE<br> DEVELOPER.</span>
-            <p id="text" class="text-red-500"></p>
+            <span class="text-gray-600">A SOFTWARE<br> DEVELOPER.</span>
         </div>
-        <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-lg shadow-gray-600 absolute top-96 bottom-0 m-auto left-36 bg-white  p-6 h-fit w-1/3">
-            <h1 class="text-4xl font-bold text-stroke-black">Hi, I'm Gabriel</h1>
+        <div class=" lg:flex flex-col gap-5 rounded-md shadow-lg shadow-gray-600 absolute top-96 bottom-0 m-auto left-36 bg-white  p-6 h-fit w-1/3 ">
+            <h1 class="text-4xl font-bold text-stroke-black">I'm Gabriel Wambua</h1>
             <p class="text-gray-600">
                 with a certificate of experience on web design and development. Lorem ipsum dolor sit amet consectetur adipisicing elit. N oumquam quo provident, facere minus temporibus veniam nostrum reprehenderit nihil?
             </p>
-            <a class="bg-gray-500 text-white text-xl px-3 py-2 rounded-md  w-fit" href="#contact">Hire Me</a>
+            <a class="bg-gray-500 text-white text-xl px-3 py-2 rounded-md  w-fit" href="#contact">Book Me</a>
         </div>
         </div>
-        </div>
-    </div>
+        </div><br>
+    
     
     <!-- About me Section -->
-    <div id="about" class="px-10 dark:bg-white">
-        <div class="container mx-auto py-40 flex flex-col-reverse lg:flex-row items-center gap-20">
-
-            <div class="my-auto flex flex-col gap-3 ">
-                <h1 class="text-stroke-black font-bold underline text-3xl">ABOUT ME.</h1>
-               
-
-                <div class="grid md:grid-cols-3 grid-cols-1 mt-8 gap-[30px]">
-
-                <div class="flex flex-col gap-5 rounded-md shadow-lg bg-white p-6 max-w-md mx-auto content mt-7 shadow-gray-600">
-                    <h1 class="text-4xl font-bold text-stroke-black">Experience.</h1>
-                    <p class="text-gray-600">
-                        2+ years<br>
-                        Frontend and Backend Development.
-                    </p>
-                </div>
-
-
-                <div class="flex flex-col gap-5 rounded-md shadow-lg bg-white p-6 max-w-md mx-auto content mt-7 shadow-gray-600">
-                    <h1 class="text-4xl font-bold text-stroke-black">Education.</h1>
-                    <p class="text-gray-600">
-                        Certificate in Software Development.<br>
-                        Diploma in Software Development.
-                    </p>
-                </div>
-
-
-                <div class="flex flex-col gap-5 rounded-md shadow-lg bg-white p-6 max-w-md mx-auto content mt-7 shadow-gray-600">
-                    <h1 class="text-4xl font-bold text-stroke-black ">My Slogan.</h1>
-                    <p class="text-gray-600">
-                        A Better Design <br>
-                       for Better a Experience.
-                    </p>
-                </div>
-
-                </div>
-                <br><br>
-                <p class="text-gray-600">
-                    I design and build digital products. I'm also a multi-disciplinary maker with over 5 years of experiences in a wide range of design disciplines.
-                    As a web designer, my prowess in crafting digital landscapes is truly commendable. I have a keen eye for aesthetics and attention to detail shine through in every project you undertake. Your designs not only demonstrate a deep understanding of user experience but also reflect a unique and innovative approach. The seamless integration of color schemes, typography, and layout showcases your ability to create visually stunning and functional websites.
-
-Your skill in translating clients' visions into reality is exceptional, and your ability to adapt to various industries and niches is noteworthy. Your commitment to staying updated with the latest design trends and technologies ensures that your work remains cutting-edge and relevant. Your websites not only look appealing but also prioritize user-friendly navigation, enhancing the overall user experience.
-
-My proficiency in utilizing a variety of design tools and coding languages underscores your versatility as a web designer. Clients consistently praise my ability to deliver projects on time and within budget, reflecting your professionalism and reliability. My portfolio stands as a testament to your creativity and versatility, showcasing a diverse range of projects that highlight my adaptability and innovation.
+    <div id="about" class="px-10 dark:bg-white py-16">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center gap-16">
+            <!-- Left Side: Text and Description -->
+            <div class="lg:w-1/2 my-auto flex flex-col gap-6">
+                <h1 class="text-stroke-black font-bold underline text-3xl text-center lg:text-left">ABOUT ME.</h1>
+                <p class="text-gray-600 text-lg leading-relaxed text-center lg:text-left">
+                    I design and build digital products. I'm a multi-disciplinary maker with over 5 years of experience across a wide range of design disciplines. As a web designer, my prowess in crafting digital landscapes is commendable. I have a keen eye for aesthetics and attention to detail that shines through in every project.
+                    <br><br>
+                    My skill in translating clients' visions into reality is exceptional. My work remains cutting-edge and relevant, with a portfolio showcasing a diverse range of projects that highlight adaptability and innovation.
                 </p>
+            </div>
+    
+            <!-- Right Side: Experience, Education, Slogan Cards in a Presentable Layout -->
+            <div class="lg:w-1/2 grid md:grid-cols-3 grid-cols-1 gap-8 mt-8 lg:mt-0">
+                <!-- Experience Card -->
+                <div class="flex flex-col gap-4 rounded-md shadow-lg bg-white p-8 max-w-md mx-auto transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl shadow-gray-600">
+                    <h1 class="text-2xl font-bold text-stroke-black text-center">Experience</h1>
+                    <p class="text-gray-600 text-center">
+                        2+ years<br>Frontend and Backend Development.
+                    </p>
+                </div>
+    
+                <!-- Education Card -->
+                <div class="flex flex-col gap-4 rounded-md shadow-lg bg-white p-8 max-w-md mx-auto transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl shadow-gray-600">
+                    <h1 class="text-2xl font-bold text-stroke-black text-center">Education</h1>
+                    <p class="text-gray-600 text-center">
+                        Certificate in Software Development.<br>Diploma in Software Development.
+                    </p>
+                </div>
+    
+                <!-- Slogan Card -->
+                <div class="flex flex-col gap-4 rounded-md shadow-lg bg-white p-8 max-w-md mx-auto transform transition-transform duration-300 hover:-translate-y-2 hover:shadow-2xl shadow-gray-600">
+                    <h1 class="text-2xl font-bold text-stroke-black text-center">My Slogan</h1>
+                    <p class="text-gray-600 text-center">
+                        Elevate Your Online Presence with<br>Our Unique Designs.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+    
 
 
     <!-- services -->
-    <div id="services" class="dark:bg-white">
-    <section class="container mx-auto px-6 py-16 md:py-24 relative">
-        <div class="text-center grid grid-cols-1 pb-8">
-            <h6 class="dark:text-stroke-black font-bold uppercase mb-2 underline text-3xl">Services.</h6>
-            <h3 class="font-semibold text-2xl md:text-3xl leading-normal mb-4">What Do i Offer?</h3>
-            <p class="max-w-xl mx-auto text-slate-400">
-                I offer a wide range of services to help you achieve your goals. Whether you need assistance with website design, marketing, or anything in between, we've got you covered. Here are some of the services we provide:
-            </p>
-        </div>
-        <div class="grid md:grid-cols-3 grid-cols-1 mt-8 gap-[30px]">
-            <div class="group p-6 md:px-4 rounded-lg shadow hover:shadow-md bg-white text-center transition-all duration-500 ease-in-out shadow-gray-600">
-                <!-- Icon -->
-                <div class="w-16 h-16 rounded-lg text-2xl flex items-center justify-center shadow-sm mx-auto">
-                    <img src="images/i4.png" alt="">
-                </div>
-                <div class="content mt-7 ">
-                    <a href="" class="title h5 text-lg font-medium hover:text-blue-600">HTML</a>
-                    <p class="text-slate-400 mt-3">
-                        I deliver high-quality solutions for web development. To begin, understanding client requirements is crucial; effective communication helps tailor HTML code to meet their specific needs.
-                    </p>
-                </div>
+    <div id="services" class="bg-white dark:bg-white py-20">
+        <section class="container mx-auto px-6 md:py-36 relative">
+            <!-- Title and Description -->
+            <div class="text-center grid grid-cols-1 pb-2">
+                <h6 class="font-bold uppercase mb-2 underline text-3xl text-stroke-black">Services.</h6>
+                <h3 class="font-semibold text-2xl md:text-3xl mb-4">Services Provided?</h3>
+                <p class="max-w-xl mx-auto text-slate-400">
+                    I offer a wide range of services to help you achieve your goals. Whether you need assistance with website design, marketing, or anything in between, we've got you covered. Here are some of the services we provide:
+                </p>
             </div>
     
-            <div class="group p-6 md:px-4 rounded-lg shadow hover:shadow-md bg-white text-center transition-all duration-500 ease-in-out shadow-gray-600">
-                <div class="w-16 h-16 rounded-lg text-2xl flex items-center justify-center shadow-sm mx-auto">
-                    <img src="images/i1.png" alt="">
+            <!-- Service Cards -->
+            <div class="grid md:grid-cols-3 grid-cols-1 mt-8 gap-10">
+                <!-- Service Card 1 -->
+                <div class="group relative p-6 rounded-lg shadow-lg hover:shadow-2xl bg-white text-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center mx-auto transition-transform duration-300 transform group-hover:scale-110">
+                        <img src="images/i4.png" alt="HTML" class="w-10 h-10">
+                    </div>
+                    <div class="mt-7">
+                        <a href="#" class="title h5 text-lg font-medium hover:text-blue-600">HTML</a>
+                        <p class="text-slate-400 mt-3">
+                            I deliver high-quality solutions for web development. To begin, understanding client requirements is crucial; effective communication helps tailor HTML code to meet their specific needs.
+                        </p>
+                    </div>
                 </div>
-                <div class="content mt-7">
-                    <a href="" class="title h5 text-lg font-medium hover:text-blue-600">CSS</a>
-                    <p class="text-slate-400 mt-3">
-                        I craft visually appealing and responsive designs for websites. To start, assessing the client's design preferences and branding guidelines is essential for a personalized approach.
-                    </p>
-                </div>
-            </div>
     
-            <div class="group p-6 md:px-4 rounded-lg shadow hover:shadow-md bg-white text-center transition-all duration-500 ease-in-out shadow-gray-600">
-                <div class="w-16 h-16 rounded-lg text-2xl flex items-center justify-center shadow-sm mx-auto">
-                    <img src="images/i5.png" alt="">
+                <!-- Service Card 2 -->
+                <div class="group relative p-6 rounded-lg shadow-lg hover:shadow-2xl bg-white text-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-green-400 to-blue-400 flex items-center justify-center mx-auto transition-transform duration-300 transform group-hover:scale-110">
+                        <img src="images/i1.png" alt="CSS" class="w-10 h-10">
+                    </div>
+                    <div class="mt-7">
+                        <a href="#" class="title h5 text-lg font-medium hover:text-blue-600">CSS</a>
+                        <p class="text-slate-400 mt-3">
+                            I craft visually appealing and responsive designs for websites. To start, assessing the client's design preferences and branding guidelines is essential for a personalized approach.
+                        </p>
+                    </div>
                 </div>
-                <div class="content mt-7">
-                    <a href="#" class="title h5 text-lg font-medium hover:text-blue-600">JAVASCRIPT</a>
-                    <p class="text-slate-400 mt-3">
-                        I create dynamic and interactive web experiences. Understanding clients' functional requirements is fundamental for tailoring JavaScript solutions to meet specific needs.
-                    </p>
+    
+                <!-- Service Card 3 -->
+                <div class="group relative p-6 rounded-lg shadow-lg hover:shadow-2xl bg-white text-center transition-all duration-500 ease-in-out transform hover:-translate-y-2">
+                    <div class="w-16 h-16 rounded-full bg-gradient-to-r from-pink-500 to-yellow-500 flex items-center justify-center mx-auto transition-transform duration-300 transform group-hover:scale-110">
+                        <img src="images/i5.png" alt="JavaScript" class="w-10 h-10">
+                    </div>
+                    <div class="mt-7">
+                        <a href="#" class="title h5 text-lg font-medium hover:text-blue-600">JavaScript</a>
+                        <p class="text-slate-400 mt-3">
+                            I create dynamic and interactive web experiences. Understanding clients' functional requirements is fundamental for tailoring JavaScript solutions to meet specific needs.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </div>
+    
 
     
     <!-- works -->
-    <div id="works" class="py-40 dark:bg-white">
+    <div id="works" class="py-20 dark:bg-white">
         <div class="container mx-auto">
             <!-- top -->
             <div class="flex flex-col gap-3 items-center">
@@ -202,15 +210,15 @@ My proficiency in utilizing a variety of design tools and coding languages under
                     I help designers, small agencies, and businesses bring their ideas to life. Powered by Figma, VS Code, and coffee, I turn your requirements into well-designed websites.
                 </p>
             </div>
-            <!-- bottom -->
+            <br><br>
+            <!-- bottom part -->
             <div class="p-5 sm:p-0 flex flex-wrap justify-between ">
-                <!-- card -->
+                <!-- cards -->
                 <div class="w-full md:w-5/12 lg:w-1/5 ">
                     <a href="CheffersHotel/index.html"><video class="rounded-2xl shadow-2xl shadow-gray-600 h-40"
                         src="vid/projectvid.mp4" autoplay muted 
                         width="500px"></video></a>
                 </div>
-                <!-- card -->
                 <div class="w-full md:w-5/12 lg:w-1/5 ">
                     <a href="Bakery/index.html"><video class="rounded-2xl shadow-2xl shadow-gray-600 h-40"
                         src="vid/projectvid2.mp4" autoplay muted
@@ -231,25 +239,31 @@ My proficiency in utilizing a variety of design tools and coding languages under
     </div>
 
     <!-- contact -->
-    <div id="contact" class="dark:bg-white">
+    <div id="contact" class="py-20 px-6 bg-white-50">
         <div class="container mx-auto">
-            <!-- top -->
-            <div class="flex flex-col gap-3 items-center">
-                <h1 class="dark:text-stroke-black font-bold underline text-3xl">CONTACT ME.</h1>
-                <h1 class="text-3xl dark:text-stroke-black">Have a Question?</h1>
-                <p class="w-1/2 text-center text-gray-600">
+            <!-- Top Section -->
+            <div class="flex flex-col gap-2 items-center mb-8">
+                <h1 class="text-4xl font-bold text-stroke-black underline">CONTACT ME.</h1>
+                <h2 class="text-3xl text-stroke-black">Have a Question?</h2>
+                <p class="w-full md:w-1/2 text-center text-gray-600">
                     Do you have an idea? Let's discuss it and see what we can do together.
                 </p>
             </div>
-            <!-- bottom -->
-            <form class="mt-5 p-8 flex flex-col gap-5 items-center">
-                <input class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-blue-50 dark:ring-0 bg-blue-50" type="text" placeholder="Name Surname" />
-                <input class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-blue-50 dark:ring-0 bg-blue-50" type="email" placeholder="Email" />
-                <textarea class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-blue-50 dark:ring-0 bg-blue-50" cols="30" rows="10" placeholder="Message..."></textarea>
-                <button class="w-1/2 bg-blue-50 text-dark font-medium px-3 py-2 rounded-md cursor-pointer">Submit</button>
+            
+            <!-- Contact Form -->
+            <form class="flex flex-col gap-4 items-center w-full md:w-1/2 mx-auto glass p-8 rounded-lg shadow-lg transform transition-transform hover:scale-105">
+                <input type="text" placeholder="Name Surname" class="p-4 w-full bg-white/80 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 shadow-md hover:shadow-lg transition-all duration-300">
+                <input type="email" placeholder="Email" class="p-4 w-full bg-white/80 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 shadow-md hover:shadow-lg transition-all duration-300">
+                <textarea placeholder="Message..." class="p-4 w-full bg-white/80 border border-gray-300 rounded-md focus:ring-2 focus:ring-indigo-500 shadow-md hover:shadow-lg transition-all duration-300" rows="5"></textarea>
+                
+                <!-- Submit Button with 3D animation effect -->
+                <button class="bg-indigo-500 text-white font-semibold py-3 px-8 rounded-lg transform transition-all duration-300 hover:scale-105 hover:bg-indigo-600 shadow-lg hover:shadow-2xl">
+                    Submit
+                </button>
             </form>
         </div>
     </div>
+    
     <!-- footer -->
     <div class="w-full bg-blue-50">
         <div class="container mx-auto py-5 flex items-center justify-between">
@@ -262,10 +276,10 @@ My proficiency in utilizing a variety of design tools and coding languages under
             </div>
         </div>
     </div>
+<!-- Link for the script -->
+    <script src="Main.js"></script>
 
-    
-    
-    
+
 </body>
 </html>
 
